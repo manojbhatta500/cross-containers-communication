@@ -1,6 +1,6 @@
 # Full Stack Docker Project
 
-This project demonstrates a full-stack application using Docker containers, showcasing various Docker concepts and best practices.
+This project is a practical implementation of Docker concepts in a full-stack application, demonstrating container networking, data persistence, and development workflows. It consists of a Node.js backend with MongoDB integration, a React frontend, and showcases best practices for containerized application development.
 
 ## Project Structure
 
