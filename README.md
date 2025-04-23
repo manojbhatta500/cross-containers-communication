@@ -1,6 +1,9 @@
 # Full Stack Docker Project
 
-This project is a practical implementation of Docker concepts in a full-stack application, demonstrating container networking, data persistence, and development workflows. It consists of a Node.js backend with MongoDB integration, a React frontend, and showcases best practices for containerized application development.
+This project is a practical implementation of Docker concepts in a full-stack application, demonstrating container networking, data persistence, and development workflows. It consists of three separate containers:
+- MongoDB container (separate database container)
+- Node.js backend container (communicates with MongoDB)
+- React frontend container (communicates with backend)
 
 ## Project Structure
 
@@ -14,9 +17,12 @@ fullstackdocker/
 ## Key Docker Concepts Learned
 
 ### 1. Container Communication
-- Implemented container networking between MongoDB, backend, and frontend containers
-- Containers communicate through Docker's internal network
-- Backend acts as a bridge between MongoDB and React frontend
+- Three separate containers communicating through Docker's internal network
+  - MongoDB container: Database storage
+  - Backend container: Business logic and API endpoints
+  - Frontend container: User interface
+- Clear separation of concerns between containers
+- Communication flow: Frontend ↔ Backend ↔ MongoDB
 
 ### 2. Data Persistence
 #### MongoDB
